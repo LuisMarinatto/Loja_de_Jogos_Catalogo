@@ -1,0 +1,216 @@
+/*aqui é o geral do que eu quero*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    list-style: none
+}
+/*aqui a gente vai criar uma parte root pra facilitar na hora de chamar as cores*/
+:root{
+    --back-color:  #1c1c1c;
+    --text-color:  #FFFFFF;
+    --main-color: #00BFFF;
+    --other-color:  #000080;
+    --h1-color:  #008000;
+    --h2-color:  #4169E1;
+    --h3-color:  #191970;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+/*background*/
+body{
+    
+    background-color: var(--back-color);
+    color: var(--text-color);
+}
+/*nosso cabeçalho*/
+header{
+    background-color: var(--back-color);
+    position: flex;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-size: cover;
+}
+/*configuração da nossa logo é aqui, ve se não quebra dessa vez*/
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+/*aqui a gente ta estilizando a nossa logo, ve se não quebra pela 4º vez*/
+.logo i{
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+    margin-top: 30px;
+}
+/*só pra deixar um do lado do outro a parte das promoções etc...*/
+.navegacao{
+    display: flex;
+}
+/*estilização dos links*/
+.navegacao a{
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 15px;
+    transition: a .55s ease;
+    
+}
+/*aqui eu descobri que eu consigo editar icone por icone "promoção ali"*/
+.navegacao i1{
+    transition: 0.6s ease;
+    cursor: pointer;  
+    color: var(--main-color);
+}
+/*foi a forma que eu consegui deixar o icone separado e da mesma altura*/
+.navegacao {
+    transform: translateY(20px);
+}
+/*esse é o do pc*/
+.navegacao i2{
+    transition: 0.6s ease;
+    cursor: pointer;
+    color: var(--main-color);
+}
+/*consoles*/
+.navegacao i3{
+    transition: 0.6s ease;
+    cursor: pointer;
+    color: var(--main-color);
+}
+/*mobile*/
+.navegacao i4{
+    transition: 0.6s ease;
+    cursor: pointer;
+    color: var(--main-color);
+}
+/*efeitinho pra colorir quando a gente passa o mouse*/
+.navegacao a:hover{
+    color: var(--h2-color);
+}
+/*corzinha pro icon promoção*/
+.navegacao i1:hover{
+    color: #FFD700;
+    transform: translateY(-5px);
+}
+/*esse é a cor pro icon pc*/
+.navegacao i2:hover{
+    color: 	black;
+    transform: translateY(-5px);
+}
+/*corzita do controle do console*/
+.navegacao i3:hover{
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+/*opa opa, aqui muda a cor do celular*/
+.navegacao i4:hover{
+    color: #DC143C;
+    transform: translateY(-5px);
+}
+/*estilizar os icons ó*/
+.header-icons{
+ display: flex;
+ align-items: center;
+ transition: 0.2s ease;
+}
+/*aqui vai mudar a cor do carrinho pra vermelho*/
+.header-icons:hover{
+    color: var(--h1-color);
+}
+/*é o "entrar", a gente estiliza ele da forma que quisermos*/
+#menuu i{
+    font-size: 20px;
+    transform: translateY(15px);
+    z-index: 10001;
+    cursor: pointer;
+    margin-top: 7px;
+    transition: 0.5s ease;
+    color: var(--main-color);
+}
+/*aqui é a nossa corzinha ao ir em entrar*/
+#menuu i:hover{
+    color: var(--h1-colorr);
+    transform: translateY(-5px);
+}
+/*icones do cabeçalho*/
+.header-icons i{
+    margin-right: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-top: 35px;
+    color: var(--main-color);
+}
+/*aqui os icones de entrar e o carrinho se mexem quando eu vou neles*/
+.header-icons i:hover{
+    transform: translateY(-15px);
+    color: red;
+}
+/*pra por um do lado do outro*/
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+/*aqui vai deixar os jogos um do lado do outro*/
+.home-text{
+    display: flex;
+    
+
+}
+/*aqui vai deixar os jogos um do lado do outro*/
+.home-text img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+/*aqui vai deixar os jogos um do lado do outro*/
+.home-text2{
+    display: flex;
+}
+/*aqui vai deixar os jogos um do lado do outro*/
+.home-text2 img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+/*o tamanho do nome e preço do joguinho*/
+.home-text h1{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+/*estilização do botao*/
+.botao{
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px transparent;
+    transition: all.55 ease;
+    color: var(--h1-color);
+}
+/*cor do botao com bordas*/
+.botao:hover{
+    background: var(--h3-color);
+    border: 2px solid transparent;
+    color: var(--text-color);
+}
