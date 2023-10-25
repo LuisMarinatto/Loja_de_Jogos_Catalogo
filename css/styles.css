@@ -214,3 +214,15 @@ header{
     border: 2px solid transparent;
     color: var(--text-color);
 }
+/*aqui é apenas a cor de fundo do rodapé*/
+footer{
+    background-color: var(--main-color);
+}
+/*aqui já é a parte que que editamos o footer para ele aparecer no site*/
+footer p{
+    padding: 3px;
+    color: var(--text-color);
+    font-size: 0.7rem;
+    text-align: flex;
+    word-spacing: 0.3rem;
+}
